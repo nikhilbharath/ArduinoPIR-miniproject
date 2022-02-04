@@ -1,3 +1,7 @@
+// The miniproject demostrates the working model of PIR sensor and Arduino 
+// that detects the human motion and control the electrical appliances
+
+
 int led = 13;
 int sensor = 2;
 int state = LOW;
