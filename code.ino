@@ -25,10 +25,10 @@ void setup(){
   pinMode(signal1, INPUT);
 
   while (digitalRead(a) == HIGH) {
-    delay(500);
-    Serial.print(".");
+    delay(2200);
+    
   }
-  Serial.println("SENSOR ACTIVE");
+  
 }
 void read_write(){
   analog = analogRead(signal1);
@@ -67,7 +67,7 @@ void iterate(){
 
       flag = false;
       Serial.print(millis()/1000);
-      delay(50);
+      delay(100);
     }
     flag1 = true;
   }
@@ -84,14 +84,14 @@ void iterate(){
 
       flag = true;
       Serial.print((millis() - halt)/1000);
-      delay(50);
+      delay(100);
     }
   }
-  delay(1000);
+  delay(2200);
   Serial.print(signal);
   Serial.println();
-  delay(1000);
+  delay(2200);
   Serial.print(analog);
   Serial.println();
-  delay(1000);
+  delay(2200);
 }
